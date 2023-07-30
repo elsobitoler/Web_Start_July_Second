@@ -44,6 +44,31 @@
 		?>
 	</div>
 ```
+А также - стили для блока container:
+```css
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Jost', sans-serif;}
+	.container {
+	    display: flex;
+		flex-wrap: wrap;
+		}
+	.item {
+	    width: 200px;
+		height: fit-content;
+		margin: 10px;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-shadow: 0px 0px 5px #ccc;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		color: #333;
+		background-color: #f9f9f9;
+	}
+	</style>
+```
+
 Далее перейдите в файловый менеджер сайта timeweb или sprinthost, в папку public_html, удалите находящуюся там папку cgi-bin и файл индекса, создайте там новый файл с расширением php, вставьте в него данный код, внесите необходимые правки для подключению к бд(сохраненная вами информация ранее) и выведите все столбцы (поля), созданные в таблице "туры" выше. Сохраните изменения, перейдите в Домены - домен сайта и по нему откройте страницу сайта, ссылку скиньте в чат LD для проверки преподавателю или покажите на демонстрации.
 
 
